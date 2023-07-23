@@ -15,6 +15,7 @@ header{
     top:0;
     width:100vw;
     left:0;
+    z-index:2;
 }
 #header-img{
     width:274px;
@@ -42,10 +43,32 @@ header{
 input{
     width:275px;
     padding: 5px 10px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    background-color:white;
 }
 #submit{
     padding:10px;
     width:150px;
-    
+    background-color: yellow;
+    border-style: none;
+
+}
+a{
+    text-decoration: none;
+    font-weight:bold;
+    color:black;
+}
+#features{
+    width:55vw;
+    margin:auto;
+}
+/* #how-it-works{
+    margin:auto;
+} */
+.video{
+   width:600px;
+   height:350px;
+   margin:auto;
+   position:relative;
+   z-index:1;
 }
