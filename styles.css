@@ -1,17 +1,17 @@
-*{
+/* *{
     box-sizing:border-box;
    
-}
-/* body{
-    padding:20px;
 } */
+body{
+    background-color: #eee;
+}
 header{
     display:flex;
     justify-content: space-between;
     position:fixed;
     min-height:75px;
     background-color: #eee;
-    padding:0px 20px;
+    padding:0px 25px;
     top:0;
     width:100vw;
     left:0;
@@ -27,11 +27,14 @@ header{
 .nav-list{
     display:flex;
     list-style: none;
-    
+    margin-right:40px;
+    margin-top:25px;
+
     
 }
 .nav-link{
-    margin:25px;
+    margin:15px;
+    
     
 }
  .title,#form{
@@ -41,7 +44,7 @@ header{
     margin-top:100px;
 }
 input{
-    width:275px;
+    width:250px;
     padding: 5px 10px;
     margin-bottom: 20px;
     background-color:white;
@@ -51,6 +54,7 @@ input{
     width:150px;
     background-color: yellow;
     border-style: none;
+    font-weight:bold;
 
 }
 a{
@@ -65,6 +69,13 @@ a{
 /* #how-it-works{
     margin:auto;
 } */
+
+#features,#how-it-works,footer{
+    margin-top: 60px;
+}
+#how-it-works{
+    margin-bottom: 60px;
+}
 .video{
    width:600px;
    height:350px;
@@ -72,3 +83,68 @@ a{
    position:relative;
    z-index:1;
 }
+#pricing{
+    display:flex;
+    margin:auto;
+    gap:1rem;
+    width:fit-content;
+    
+}
+.price{
+    width:295px;
+    height:310px;
+    border:0.5px solid black;
+    text-align:center;
+    line-height: 25px;
+    background: linear-gradient(grey 0%,#fff 80%);
+    
+}
+.price-list-child{
+    list-style:none;
+    padding-right:30px;
+ 
+    
+}
+.list{
+    margin:auto;
+   
+}
+.footerlist{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    
+
+}
+.footer-cont{
+   margin-left:50px;
+   
+   
+}
+footer{
+    display:flex;
+    width:100vw;
+  
+    flex-direction: row-reverse;
+    padding:0px 10px;
+    background-color: grey;
+    left:0;
+    bottom: 0;
+  
+}
+
+@media screen and (max-width:800px){
+    
+    #pricing{
+     display:block;
+     margin-bottom:1rem;
+    }
+    .nav-list{
+        margin-right:30px;
+    }
+    .price{
+        margin-bottom: 15px;;
+    }
+}
+
+
